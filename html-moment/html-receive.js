@@ -40,8 +40,8 @@ const handleMessage = m => {
 	y = Math.round(y);
 	r = Math.round(r);
 
-	// console.log(`_x: ${rawx}, _y: ${rawy}, _r: ${rawr}`);
-	// console.log(`x: ${x}, y: ${y}, r: ${r}`);
+	console.log(`_x: ${rawx}, _y: ${rawy}, _r: ${rawr}`);
+	console.log(`x: ${x}, y: ${y}, r: ${r}`);
 
 	output.sendMessage([0xB0, 41, x]);
 	output.sendMessage([0xB0, 42, y]);
@@ -49,15 +49,15 @@ const handleMessage = m => {
 };
 
 ws.on('open', () => {
-	setInterval(() => {
-		handleMessage({msg: {rawacc: [0,-90,-180]}})
-		setTimeout(() => {
-			handleMessage({msg: {rawacc: [180,0,0]}})
-			setTimeout(() => {
-				handleMessage({msg: {rawacc: [360,90,180]}})
-			},500);
-		},500);
-	},1500);
+	// setInterval(() => {
+	// 	handleMessage({msg: {rawacc: [0,-90,-180]}})
+	// 	setTimeout(() => {
+	// 		handleMessage({msg: {rawacc: [180,0,0]}})
+	// 		setTimeout(() => {
+	// 			handleMessage({msg: {rawacc: [360,90,180]}})
+	// 		},500);
+	// 	},500);
+	// },1500);
 });
 
 ws.on('message', data => {
