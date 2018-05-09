@@ -1,0 +1,29 @@
+<style>
+	body {
+		font-size:64px;
+		background-color:white;
+		color:black;
+	}
+</style> 
+<script type="text/javascript">
+	const eventName = 'my_unique_event';
+	window.addEventListener('load', () => {
+		const ws = new WebSocket(`ws://stagecast.se/api/events/${eventName}/ws?x-user-listener=1`);
+		var lx, ly, lr;
+		if (window.DeviceOrientationEvent) {
+			window.addEventListener('deviceorientation', event => {
+				let r = Math.round(event.alpha);
+				let x = Math.round(event.gamma);
+				let y = Math.round(event.beta);
+				if (r != lr || y!= ly || x != lx) {
+					lx = x;
+					ly = y;
+					lr = r;
+					document.body.innerHTML = `alpha: ${r}<br>gamma: ${x}<br> beta: ${y}`;
+					let data = JSON.stringify({rawacc:[r, x, y]});
+					ws.send(data);
+				}
+			}, true);
+		}
+	});
+</script>
