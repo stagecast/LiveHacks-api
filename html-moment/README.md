@@ -22,3 +22,14 @@
 1. Do 'npm install'
 2. Open up 'html-receive.js', change the variable 'eventName' and save.
 3. run 'node html-receive.js'
+
+***
+
+## Debug MIDI
+
+Install https://www.snoize.com/MIDIMonitor/ to monitor the MIDI data.
+
+## Documentation
+
+1. https://github.com/justinlatimer/node-midi
+2. https://github.com/websockets/ws
