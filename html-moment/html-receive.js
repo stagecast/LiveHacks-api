@@ -44,6 +44,8 @@ const handleMessage = m => {
 	// console.log(`x: ${x}, y: ${y}, r: ${r}`);
 
 	output.sendMessage([0xB0, 41, x]);
+	output.sendMessage([0xB0, 42, y]);
+	output.sendMessage([0xB0, 43, r]);
 };
 
 // ws.on('open', () => {
