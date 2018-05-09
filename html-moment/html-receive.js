@@ -48,17 +48,17 @@ const handleMessage = m => {
 	output.sendMessage([0xB0, 43, r]);
 };
 
-// ws.on('open', () => {
-// 	setInterval(() => {
-// 		handleMessage({msg: {rawacc: [0,-90,-180]}})
-// 		setTimeout(() => {
-// 			handleMessage({msg: {rawacc: [180,0,0]}})
-// 			setTimeout(() => {
-// 				handleMessage({msg: {rawacc: [360,90,180]}})
-// 			},500);
-// 		},500);
-// 	},1500);
-// });
+ws.on('open', () => {
+	setInterval(() => {
+		handleMessage({msg: {rawacc: [0,-90,-180]}})
+		setTimeout(() => {
+			handleMessage({msg: {rawacc: [180,0,0]}})
+			setTimeout(() => {
+				handleMessage({msg: {rawacc: [360,90,180]}})
+			},500);
+		},500);
+	},1500);
+});
 
 ws.on('message', data => {
 	try {
