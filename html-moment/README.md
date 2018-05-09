@@ -33,3 +33,7 @@ Install https://www.snoize.com/MIDIMonitor/ to monitor the MIDI data.
 
 1. https://github.com/justinlatimer/node-midi
 2. https://github.com/websockets/ws
+
+*** 
+
+Based on the work of Possan, https://github.com/possan/stagecast-hack2018
