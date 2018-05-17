@@ -1,4 +1,4 @@
-# Stagecast general web socket API
+# Stagecast web socket API
 A web socket is available for you to use. Follow the instructions below for an example. 
 
 ## Sending messages to a channel
