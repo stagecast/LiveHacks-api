@@ -1,6 +1,6 @@
 # Stagecast APIs
 
-In this repo you can find information and APIs the topics listed below. Your are welcome to use this no matter if you are a **LiveHacks**
+In this repo you can find information and APIs on the topics listed below. Your are welcome to use this no matter if you are a **LiveHacks**
 participant or not! :)
 
 ## General APIs
@@ -11,7 +11,7 @@ can be uploaded and launched instantly from the Stagecast-platform.
 Instructions and and an example project can be found in the *html-moments* folder above.
 
 ## LiveHacks specific things
-### VCD - Voice controlled devices
+### Voice controlled devices
 
 Resources around alexa can be found in the *voice-controlled-device* folder above.
 
