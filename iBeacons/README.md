@@ -2,7 +2,7 @@
 
 We have three bluetooth beacons from kontakt.io that can be used for your project. Ask anyone in the LiveHacks team to get them. The beacons are called Markus, Daniel and Magnus. 
 
-## Where to start with the beacons
+## Where to start
 Documentation for the bluetooth beacons can be found here: https://developer.kontakt.io/rest-api/api-guides/quickstart/
 
 ## Example project
