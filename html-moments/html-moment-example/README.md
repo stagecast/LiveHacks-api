@@ -1,4 +1,4 @@
-# HTML moment
+# HTML moment to send MIDI signals based on the movement of the phone
 
 ## Login
 
