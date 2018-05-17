@@ -3,6 +3,24 @@ Here you'll find general information how to use a html moment.
 
 ***
 
+## Access the Stagecast platform
+If you want to access the Stagecast web platform and launch moments follow this guide:
+
+#### Mobile phone
+1. Download Stagecast application on iOS or android
+2. Choose “Get started” -> “Create account”
+3. Use your email to create an account.
+
+#### Computer
+4. Go to stagecast.io -> Press “Log in”.
+5. Use the same credentials that you just logged in with on the phone.
+6. Create an new event.
+7. Enter your event and add whatever moments you want.
+8. *On mobile:* Find the event in the “event list” and enter the timeline of that event.
+9. Launch a moment from the web platform and you will receive it in your phone.
+
+***
+
 ## Structure your html moment
 To launch a html-moment from Stagecast web platform your project has to be strucured into one single html file. The html, css and javascript code should be in one single file. See *boilerplate.html* for example of the structure.
 
