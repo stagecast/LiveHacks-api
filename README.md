@@ -15,9 +15,9 @@ Instructions and and an example project can be found in the *html-moments* folde
 
 Resources around alexa can be found in the *voice-controlled-device* folder above.
 
-### Use of web socket
+### Use of websocket
 
-There is a Stagecast web socket connection that can be used during the hack. Instructions how to use it can be found in the *web-socket* folder above
+There is a Stagecast web socket connection that can be used during the hack. Instructions how to use it can be found in the *websocket* folder above
 
 ### Beacons
 There are a couple of iBeacons available during the hackathon. Instructions and an example iOS application to position the phone can be found in *iBeacons*
@@ -26,7 +26,6 @@ There are a couple of iBeacons available during the hackathon. Instructions and 
 ### Hardware list
 The hardware and tools provided is found at the hardware station. Below is a list with some of the thing you will find.
 
-**HARDWARE**
 - 2 arduino starter kits including some motors and sensors, see Arduino project book for all details.
 - 3 Wifi shields
 - 1 Bluetooth sheild
