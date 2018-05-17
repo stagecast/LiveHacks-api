@@ -1,12 +1,13 @@
-# HTML moment - send MIDI based on the movement of the phone
+# HTML moment example 
+Send MIDI based on the movement of the phone.
 
 ## Login
 
-1. http://staging.stagecast.se/login and login with your _staging_ credentials.
+1. http://stagecast.se/login and login with your _stagecast_ credentials.
 
 ## Create event
 
-1. http://staging.stagecast.se/dashboard/event/list
+1. http://stagecast.se/dashboard/event/list
 2. Publish the event by clicking 'Publish' next to the event.
 
 ## Create HTML moment
