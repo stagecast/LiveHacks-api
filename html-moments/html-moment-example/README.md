@@ -1,5 +1,5 @@
 # HTML moment example 
-Send MIDI based on the movement of the phone.
+Get MIDI-output based on the movement of phones.
 
 ## Login
 
