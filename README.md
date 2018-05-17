@@ -15,7 +15,7 @@ Instructions and and an example project can be found in the *html-moments* folde
 
 Resources around alexa can be found in the *voice-controlled-device* folder above.
 
-### Use of websocket
+### Use of web socket
 
 There is a Stagecast web socket connection that can be used during the hack. Instructions how to use it can be found in the *websocket* folder above.
 
