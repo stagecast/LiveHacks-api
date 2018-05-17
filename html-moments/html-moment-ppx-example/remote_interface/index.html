@@ -1,0 +1,50 @@
+<html>
+<head>
+<style>* {color:white;}</style>
+</head>
+<body><h1>Sending Color!</h1></body>
+<script src="/libs/pl.js"></script>
+<script type="text/javascript">
+
+//Requesting a websocket channel for the current content.
+PL.app_channel()
+.then(function (ws) {
+	var data = {
+		R: 255,
+		G: 128,
+		B: 0
+	}
+
+
+	console.log('asd')
+
+	const eventName = 'my_unique_event';
+	const ws2 = new WebSocket(`ws://stagecast.se/api/events/${eventName}/ws?x-user-listener=1`);
+
+	ws2.onmessage = (e) => {
+		try {
+			data = JSON.parse(e.data);
+			handleMessage(data);
+		} catch (e) {
+			console.log(e);
+		}
+	}
+
+	const handleMessage = m => {
+		console.log(m);
+		let col = m.msg.col;
+		console.log(col);
+		var data = {
+			R: col[0],
+			G: col[1],
+			B: col[2]
+		}
+		ws.plsend(data);
+	};
+
+	// You can use ws.plsend() to send data to the python script
+	ws.plsend(data)
+})
+	
+</script>
+</html>

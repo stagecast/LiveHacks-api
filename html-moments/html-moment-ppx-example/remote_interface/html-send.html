@@ -1,0 +1,61 @@
+<style>
+	body {
+		font-size:64px;
+		background-color:white;
+		color:black;
+		margin:0;
+	}
+	div {
+		display:inline-block;
+		width:50%;
+		height:50%;
+	}
+	.red {
+		background-color:red;
+	}
+	.green {
+		background-color:green;
+	}
+	.blue {
+		background-color:blue;
+	}
+	.white {
+		background-color:white;
+	}
+</style> 
+<script type="text/javascript">
+	const eventName = 'my_unique_event';
+	window.addEventListener('load', () => {
+		let elR = document.createElement('div');
+		let elG = document.createElement('div');
+		let elB = document.createElement('div');
+		let elW = document.createElement('div');
+		elR.classList.add('red');
+		elG.classList.add('green');
+		elB.classList.add('blue');
+		elW.classList.add('white');
+		let els = [elR,elG,elB,elW];
+		const ws = new WebSocket(`ws://stagecast.se/api/events/${eventName}/ws?x-user-listener=1`);
+		for (let el of els){
+			document.body.appendChild(el);
+			el.addEventListener('click',()=>{
+				let r = 0;
+				let g = 0;
+				let b = 0;
+				switch (el.className){
+					case 'red':
+						r = 255;
+					break;
+					case 'green':
+						g = 255;
+					break;
+					case 'blue':
+						b = 255;
+					break;
+				}
+				let data = JSON.stringify({col:[r, g, b]});
+				ws.send(data);
+			});
+		}
+	});
+</script>
