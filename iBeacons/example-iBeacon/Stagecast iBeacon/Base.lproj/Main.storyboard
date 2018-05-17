@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Yhy-X6-Zk9"/>
+                        <viewControllerLayoutGuide type="bottom" id="lRr-2j-lTg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UCB-en-qqw" customClass="MapView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="uGh-lk-r27">
+                                <rect key="frame" x="0.0" y="556" width="375" height="111"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="111" id="NOc-nx-007"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stagecast-logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="hkv-VJ-kyQ">
+                                <rect key="frame" x="115" y="33" width="145" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="145" id="EFG-xR-MUF"/>
+                                    <constraint firstAttribute="height" constant="61" id="HeX-6Y-zxA"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.050980392156862744" green="0.13725490196078433" blue="0.19215686274509802" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hkv-VJ-kyQ" firstAttribute="centerX" secondItem="UCB-en-qqw" secondAttribute="centerX" id="8ZF-h4-G98"/>
+                            <constraint firstItem="uGh-lk-r27" firstAttribute="leading" secondItem="UCB-en-qqw" secondAttribute="leadingMargin" constant="-16" id="NmR-4C-jmL"/>
+                            <constraint firstItem="hkv-VJ-kyQ" firstAttribute="top" secondItem="Yhy-X6-Zk9" secondAttribute="bottom" constant="33" id="TUR-X6-WVc"/>
+                            <constraint firstAttribute="bottom" secondItem="uGh-lk-r27" secondAttribute="bottom" id="Xli-Lv-38y"/>
+                            <constraint firstItem="uGh-lk-r27" firstAttribute="trailing" secondItem="UCB-en-qqw" secondAttribute="trailingMargin" constant="16" id="iIY-Qv-ALC"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="mapView" destination="UCB-en-qqw" id="WCH-ZZ-anp"/>
+                        <outlet property="textViewInfo" destination="uGh-lk-r27" id="ym2-NB-Zfr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="23.199999999999999" y="38.23088455772114"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="jzW-jT-CcV">
+            <objects>
+                <viewController id="b4l-eM-dxO" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="e8w-V4-ZMi"/>
+                        <viewControllerLayoutGuide type="bottom" id="w2T-tr-DkA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cBS-eF-lQT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dtf-xE-88h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="stagecast-logo.png" width="306" height="130"/>
+    </resources>
+</document>

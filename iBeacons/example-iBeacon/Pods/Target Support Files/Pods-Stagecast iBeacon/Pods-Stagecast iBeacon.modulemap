@@ -1,0 +1,6 @@
+framework module Pods_Stagecast_iBeacon {
+  umbrella header "Pods-Stagecast iBeacon-umbrella.h"
+
+  export *
+  module * { export * }
+}

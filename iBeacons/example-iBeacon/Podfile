@@ -1,0 +1,8 @@
+platform :ios, '8.0'
+use_frameworks!
+
+target "Stagecast iBeacon" do
+
+    pod 'KontaktSDK', '~> 1.3'
+
+end

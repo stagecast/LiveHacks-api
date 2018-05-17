@@ -1,0 +1,713 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		647927091E5AA6BEB5C82BDD /* Pods_Stagecast_iBeacon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3113B51F0DA4A8A8D9A6BC48 /* Pods_Stagecast_iBeacon.framework */; };
+		D14B07271E85AF160050F26C /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = D14B07261E85AF160050F26C /* Podfile */; };
+		D14E20FC1E85A7670051F341 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D14E20FB1E85A7670051F341 /* main.m */; };
+		D14E20FF1E85A7670051F341 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D14E20FE1E85A7670051F341 /* AppDelegate.m */; };
+		D14E21021E85A7670051F341 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D14E21011E85A7670051F341 /* ViewController.m */; };
+		D14E21051E85A7670051F341 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D14E21031E85A7670051F341 /* Main.storyboard */; };
+		D14E21071E85A7670051F341 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D14E21061E85A7670051F341 /* Assets.xcassets */; };
+		D14E210A1E85A7670051F341 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D14E21081E85A7670051F341 /* LaunchScreen.storyboard */; };
+		D14E21151E85A7670051F341 /* Stagecast_iBeaconTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D14E21141E85A7670051F341 /* Stagecast_iBeaconTests.m */; };
+		D14E21201E85A7670051F341 /* Stagecast_iBeaconUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D14E211F1E85A7670051F341 /* Stagecast_iBeaconUITests.m */; };
+		D16E20411E8F2230007F2BA2 /* Icon20.png in Resources */ = {isa = PBXBuildFile; fileRef = D16E20321E8F2230007F2BA2 /* Icon20.png */; };
+		D16E20421E8F2230007F2BA2 /* Icon20@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D16E20331E8F2230007F2BA2 /* Icon20@2x.png */; };
+		D16E20431E8F2230007F2BA2 /* Icon20@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D16E20341E8F2230007F2BA2 /* Icon20@3x.png */; };
+		D16E20441E8F2230007F2BA2 /* Icon29.png in Resources */ = {isa = PBXBuildFile; fileRef = D16E20351E8F2230007F2BA2 /* Icon29.png */; };
+		D16E20451E8F2230007F2BA2 /* Icon29@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D16E20361E8F2230007F2BA2 /* Icon29@2x.png */; };
+		D16E20461E8F2230007F2BA2 /* Icon29@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D16E20371E8F2230007F2BA2 /* Icon29@3x.png */; };
+		D16E20471E8F2230007F2BA2 /* Icon40.png in Resources */ = {isa = PBXBuildFile; fileRef = D16E20381E8F2230007F2BA2 /* Icon40.png */; };
+		D16E20481E8F2230007F2BA2 /* Icon40@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D16E20391E8F2230007F2BA2 /* Icon40@2x.png */; };
+		D16E20491E8F2230007F2BA2 /* Icon40@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D16E203A1E8F2230007F2BA2 /* Icon40@3x.png */; };
+		D16E204B1E8F2230007F2BA2 /* Icon60@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D16E203C1E8F2230007F2BA2 /* Icon60@2x.png */; };
+		D16E204C1E8F2230007F2BA2 /* Icon60@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = D16E203D1E8F2230007F2BA2 /* Icon60@3x.png */; };
+		D16E204D1E8F2230007F2BA2 /* Icon76.png in Resources */ = {isa = PBXBuildFile; fileRef = D16E203E1E8F2230007F2BA2 /* Icon76.png */; };
+		D16E204E1E8F2230007F2BA2 /* Icon76@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D16E203F1E8F2230007F2BA2 /* Icon76@2x.png */; };
+		D16E204F1E8F2230007F2BA2 /* Icon835@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D16E20401E8F2230007F2BA2 /* Icon835@2x.png */; };
+		D17739BF1E8EEF45008F4658 /* stagecast-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = D17739BE1E8EEF45008F4658 /* stagecast-logo.png */; };
+		D17739C41E8EF20F008F4658 /* MapView.m in Sources */ = {isa = PBXBuildFile; fileRef = D17739C31E8EF20F008F4658 /* MapView.m */; };
+		D17739C61E8EFE64008F4658 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D17739C51E8EFE64008F4658 /* GLKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D14E21111E85A7670051F341 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D14E20EF1E85A7660051F341 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D14E20F61E85A7670051F341;
+			remoteInfo = "Stagecast iBeacon";
+		};
+		D14E211C1E85A7670051F341 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D14E20EF1E85A7660051F341 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D14E20F61E85A7670051F341;
+			remoteInfo = "Stagecast iBeacon";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3113B51F0DA4A8A8D9A6BC48 /* Pods_Stagecast_iBeacon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Stagecast_iBeacon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		939D34D5F9C21B1B1F9C61E7 /* Pods-Stagecast iBeacon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stagecast iBeacon.release.xcconfig"; path = "Pods/Target Support Files/Pods-Stagecast iBeacon/Pods-Stagecast iBeacon.release.xcconfig"; sourceTree = "<group>"; };
+		B8665DA1E80BCF1C05E53DE2 /* Pods-Stagecast iBeacon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stagecast iBeacon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Stagecast iBeacon/Pods-Stagecast iBeacon.debug.xcconfig"; sourceTree = "<group>"; };
+		D14B07261E85AF160050F26C /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		D14E20F71E85A7670051F341 /* Stagecast iBeacon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stagecast iBeacon.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D14E20FB1E85A7670051F341 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D14E20FD1E85A7670051F341 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D14E20FE1E85A7670051F341 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D14E21001E85A7670051F341 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D14E21011E85A7670051F341 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D14E21041E85A7670051F341 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D14E21061E85A7670051F341 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D14E21091E85A7670051F341 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D14E210B1E85A7670051F341 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D14E21101E85A7670051F341 /* Stagecast iBeaconTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stagecast iBeaconTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D14E21141E85A7670051F341 /* Stagecast_iBeaconTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Stagecast_iBeaconTests.m; sourceTree = "<group>"; };
+		D14E21161E85A7670051F341 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D14E211B1E85A7670051F341 /* Stagecast iBeaconUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stagecast iBeaconUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D14E211F1E85A7670051F341 /* Stagecast_iBeaconUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Stagecast_iBeaconUITests.m; sourceTree = "<group>"; };
+		D14E21211E85A7670051F341 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D16E20321E8F2230007F2BA2 /* Icon20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon20.png; path = Icons/Icon20.png; sourceTree = SOURCE_ROOT; };
+		D16E20331E8F2230007F2BA2 /* Icon20@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon20@2x.png"; path = "Icons/Icon20@2x.png"; sourceTree = SOURCE_ROOT; };
+		D16E20341E8F2230007F2BA2 /* Icon20@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon20@3x.png"; path = "Icons/Icon20@3x.png"; sourceTree = SOURCE_ROOT; };
+		D16E20351E8F2230007F2BA2 /* Icon29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon29.png; path = Icons/Icon29.png; sourceTree = SOURCE_ROOT; };
+		D16E20361E8F2230007F2BA2 /* Icon29@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon29@2x.png"; path = "Icons/Icon29@2x.png"; sourceTree = SOURCE_ROOT; };
+		D16E20371E8F2230007F2BA2 /* Icon29@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon29@3x.png"; path = "Icons/Icon29@3x.png"; sourceTree = SOURCE_ROOT; };
+		D16E20381E8F2230007F2BA2 /* Icon40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon40.png; path = Icons/Icon40.png; sourceTree = SOURCE_ROOT; };
+		D16E20391E8F2230007F2BA2 /* Icon40@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon40@2x.png"; path = "Icons/Icon40@2x.png"; sourceTree = SOURCE_ROOT; };
+		D16E203A1E8F2230007F2BA2 /* Icon40@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon40@3x.png"; path = "Icons/Icon40@3x.png"; sourceTree = SOURCE_ROOT; };
+		D16E203C1E8F2230007F2BA2 /* Icon60@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon60@2x.png"; path = "Icons/Icon60@2x.png"; sourceTree = SOURCE_ROOT; };
+		D16E203D1E8F2230007F2BA2 /* Icon60@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon60@3x.png"; path = "Icons/Icon60@3x.png"; sourceTree = SOURCE_ROOT; };
+		D16E203E1E8F2230007F2BA2 /* Icon76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon76.png; path = Icons/Icon76.png; sourceTree = SOURCE_ROOT; };
+		D16E203F1E8F2230007F2BA2 /* Icon76@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon76@2x.png"; path = "Icons/Icon76@2x.png"; sourceTree = SOURCE_ROOT; };
+		D16E20401E8F2230007F2BA2 /* Icon835@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon835@2x.png"; path = "Icons/Icon835@2x.png"; sourceTree = SOURCE_ROOT; };
+		D17739BE1E8EEF45008F4658 /* stagecast-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stagecast-logo.png"; sourceTree = "<group>"; };
+		D17739C21E8EF20F008F4658 /* MapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapView.h; sourceTree = "<group>"; };
+		D17739C31E8EF20F008F4658 /* MapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapView.m; sourceTree = "<group>"; };
+		D17739C51E8EFE64008F4658 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D14E20F41E85A7670051F341 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D17739C61E8EFE64008F4658 /* GLKit.framework in Frameworks */,
+				647927091E5AA6BEB5C82BDD /* Pods_Stagecast_iBeacon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D14E210D1E85A7670051F341 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D14E21181E85A7670051F341 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2DB4864E815713C76E2C53C8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B8665DA1E80BCF1C05E53DE2 /* Pods-Stagecast iBeacon.debug.xcconfig */,
+				939D34D5F9C21B1B1F9C61E7 /* Pods-Stagecast iBeacon.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		977EFB5BEA9B2507547CF840 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D17739C51E8EFE64008F4658 /* GLKit.framework */,
+				3113B51F0DA4A8A8D9A6BC48 /* Pods_Stagecast_iBeacon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D14E20EE1E85A7660051F341 = {
+			isa = PBXGroup;
+			children = (
+				D14E20F91E85A7670051F341 /* Stagecast iBeacon */,
+				D14B07261E85AF160050F26C /* Podfile */,
+				D14E21131E85A7670051F341 /* Stagecast iBeaconTests */,
+				D14E211E1E85A7670051F341 /* Stagecast iBeaconUITests */,
+				D14E20F81E85A7670051F341 /* Products */,
+				2DB4864E815713C76E2C53C8 /* Pods */,
+				977EFB5BEA9B2507547CF840 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D14E20F81E85A7670051F341 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D14E20F71E85A7670051F341 /* Stagecast iBeacon.app */,
+				D14E21101E85A7670051F341 /* Stagecast iBeaconTests.xctest */,
+				D14E211B1E85A7670051F341 /* Stagecast iBeaconUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D14E20F91E85A7670051F341 /* Stagecast iBeacon */ = {
+			isa = PBXGroup;
+			children = (
+				D14E20FD1E85A7670051F341 /* AppDelegate.h */,
+				D14E20FE1E85A7670051F341 /* AppDelegate.m */,
+				D14E21001E85A7670051F341 /* ViewController.h */,
+				D14E21011E85A7670051F341 /* ViewController.m */,
+				D17739C21E8EF20F008F4658 /* MapView.h */,
+				D17739C31E8EF20F008F4658 /* MapView.m */,
+				D14E21061E85A7670051F341 /* Assets.xcassets */,
+				D14E21031E85A7670051F341 /* Main.storyboard */,
+				D14E21081E85A7670051F341 /* LaunchScreen.storyboard */,
+				D14E210B1E85A7670051F341 /* Info.plist */,
+				D17739BD1E8EEEDC008F4658 /* Images */,
+				D14E20FA1E85A7670051F341 /* Supporting Files */,
+			);
+			path = "Stagecast iBeacon";
+			sourceTree = "<group>";
+		};
+		D14E20FA1E85A7670051F341 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D14E20FB1E85A7670051F341 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D14E21131E85A7670051F341 /* Stagecast iBeaconTests */ = {
+			isa = PBXGroup;
+			children = (
+				D14E21141E85A7670051F341 /* Stagecast_iBeaconTests.m */,
+				D14E21161E85A7670051F341 /* Info.plist */,
+			);
+			path = "Stagecast iBeaconTests";
+			sourceTree = "<group>";
+		};
+		D14E211E1E85A7670051F341 /* Stagecast iBeaconUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D14E211F1E85A7670051F341 /* Stagecast_iBeaconUITests.m */,
+				D14E21211E85A7670051F341 /* Info.plist */,
+			);
+			path = "Stagecast iBeaconUITests";
+			sourceTree = "<group>";
+		};
+		D16E20131E8F20E4007F2BA2 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				D16E20321E8F2230007F2BA2 /* Icon20.png */,
+				D16E20331E8F2230007F2BA2 /* Icon20@2x.png */,
+				D16E20341E8F2230007F2BA2 /* Icon20@3x.png */,
+				D16E20351E8F2230007F2BA2 /* Icon29.png */,
+				D16E20361E8F2230007F2BA2 /* Icon29@2x.png */,
+				D16E20371E8F2230007F2BA2 /* Icon29@3x.png */,
+				D16E20381E8F2230007F2BA2 /* Icon40.png */,
+				D16E20391E8F2230007F2BA2 /* Icon40@2x.png */,
+				D16E203A1E8F2230007F2BA2 /* Icon40@3x.png */,
+				D16E203C1E8F2230007F2BA2 /* Icon60@2x.png */,
+				D16E203D1E8F2230007F2BA2 /* Icon60@3x.png */,
+				D16E203E1E8F2230007F2BA2 /* Icon76.png */,
+				D16E203F1E8F2230007F2BA2 /* Icon76@2x.png */,
+				D16E20401E8F2230007F2BA2 /* Icon835@2x.png */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
+		D17739BD1E8EEEDC008F4658 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D16E20131E8F20E4007F2BA2 /* Icons */,
+				D17739BE1E8EEF45008F4658 /* stagecast-logo.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D14E20F61E85A7670051F341 /* Stagecast iBeacon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D14E21241E85A7670051F341 /* Build configuration list for PBXNativeTarget "Stagecast iBeacon" */;
+			buildPhases = (
+				FE4C838B6189704BEC0EC210 /* [CP] Check Pods Manifest.lock */,
+				D14E20F31E85A7670051F341 /* Sources */,
+				D14E20F41E85A7670051F341 /* Frameworks */,
+				D14E20F51E85A7670051F341 /* Resources */,
+				3621B19C92558F801AEC877D /* [CP] Embed Pods Frameworks */,
+				F598889F94FAB803826F3537 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Stagecast iBeacon";
+			productName = "Stagecast iBeacon";
+			productReference = D14E20F71E85A7670051F341 /* Stagecast iBeacon.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D14E210F1E85A7670051F341 /* Stagecast iBeaconTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D14E21271E85A7670051F341 /* Build configuration list for PBXNativeTarget "Stagecast iBeaconTests" */;
+			buildPhases = (
+				D14E210C1E85A7670051F341 /* Sources */,
+				D14E210D1E85A7670051F341 /* Frameworks */,
+				D14E210E1E85A7670051F341 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D14E21121E85A7670051F341 /* PBXTargetDependency */,
+			);
+			name = "Stagecast iBeaconTests";
+			productName = "Stagecast iBeaconTests";
+			productReference = D14E21101E85A7670051F341 /* Stagecast iBeaconTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D14E211A1E85A7670051F341 /* Stagecast iBeaconUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D14E212A1E85A7670051F341 /* Build configuration list for PBXNativeTarget "Stagecast iBeaconUITests" */;
+			buildPhases = (
+				D14E21171E85A7670051F341 /* Sources */,
+				D14E21181E85A7670051F341 /* Frameworks */,
+				D14E21191E85A7670051F341 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D14E211D1E85A7670051F341 /* PBXTargetDependency */,
+			);
+			name = "Stagecast iBeaconUITests";
+			productName = "Stagecast iBeaconUITests";
+			productReference = D14E211B1E85A7670051F341 /* Stagecast iBeaconUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D14E20EF1E85A7660051F341 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Stagecast;
+				TargetAttributes = {
+					D14E20F61E85A7670051F341 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 8WM4N873JA;
+						ProvisioningStyle = Automatic;
+					};
+					D14E210F1E85A7670051F341 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 7PWNJ5MY4Y;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D14E20F61E85A7670051F341;
+					};
+					D14E211A1E85A7670051F341 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 7PWNJ5MY4Y;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D14E20F61E85A7670051F341;
+					};
+				};
+			};
+			buildConfigurationList = D14E20F21E85A7660051F341 /* Build configuration list for PBXProject "Stagecast iBeacon" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D14E20EE1E85A7660051F341;
+			productRefGroup = D14E20F81E85A7670051F341 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D14E20F61E85A7670051F341 /* Stagecast iBeacon */,
+				D14E210F1E85A7670051F341 /* Stagecast iBeaconTests */,
+				D14E211A1E85A7670051F341 /* Stagecast iBeaconUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D14E20F51E85A7670051F341 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D16E204F1E8F2230007F2BA2 /* Icon835@2x.png in Resources */,
+				D16E20491E8F2230007F2BA2 /* Icon40@3x.png in Resources */,
+				D16E20411E8F2230007F2BA2 /* Icon20.png in Resources */,
+				D14E210A1E85A7670051F341 /* LaunchScreen.storyboard in Resources */,
+				D16E20471E8F2230007F2BA2 /* Icon40.png in Resources */,
+				D16E20451E8F2230007F2BA2 /* Icon29@2x.png in Resources */,
+				D16E20421E8F2230007F2BA2 /* Icon20@2x.png in Resources */,
+				D14E21071E85A7670051F341 /* Assets.xcassets in Resources */,
+				D14B07271E85AF160050F26C /* Podfile in Resources */,
+				D16E20461E8F2230007F2BA2 /* Icon29@3x.png in Resources */,
+				D16E204B1E8F2230007F2BA2 /* Icon60@2x.png in Resources */,
+				D17739BF1E8EEF45008F4658 /* stagecast-logo.png in Resources */,
+				D16E204E1E8F2230007F2BA2 /* Icon76@2x.png in Resources */,
+				D16E20441E8F2230007F2BA2 /* Icon29.png in Resources */,
+				D16E20481E8F2230007F2BA2 /* Icon40@2x.png in Resources */,
+				D16E204C1E8F2230007F2BA2 /* Icon60@3x.png in Resources */,
+				D16E20431E8F2230007F2BA2 /* Icon20@3x.png in Resources */,
+				D14E21051E85A7670051F341 /* Main.storyboard in Resources */,
+				D16E204D1E8F2230007F2BA2 /* Icon76.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D14E210E1E85A7670051F341 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D14E21191E85A7670051F341 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3621B19C92558F801AEC877D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Stagecast iBeacon/Pods-Stagecast iBeacon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F598889F94FAB803826F3537 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Stagecast iBeacon/Pods-Stagecast iBeacon-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE4C838B6189704BEC0EC210 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D14E20F31E85A7670051F341 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D14E21021E85A7670051F341 /* ViewController.m in Sources */,
+				D17739C41E8EF20F008F4658 /* MapView.m in Sources */,
+				D14E20FF1E85A7670051F341 /* AppDelegate.m in Sources */,
+				D14E20FC1E85A7670051F341 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D14E210C1E85A7670051F341 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D14E21151E85A7670051F341 /* Stagecast_iBeaconTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D14E21171E85A7670051F341 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D14E21201E85A7670051F341 /* Stagecast_iBeaconUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D14E21121E85A7670051F341 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D14E20F61E85A7670051F341 /* Stagecast iBeacon */;
+			targetProxy = D14E21111E85A7670051F341 /* PBXContainerItemProxy */;
+		};
+		D14E211D1E85A7670051F341 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D14E20F61E85A7670051F341 /* Stagecast iBeacon */;
+			targetProxy = D14E211C1E85A7670051F341 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D14E21031E85A7670051F341 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D14E21041E85A7670051F341 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D14E21081E85A7670051F341 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D14E21091E85A7670051F341 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D14E21221E85A7670051F341 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D14E21231E85A7670051F341 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D14E21251E85A7670051F341 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8665DA1E80BCF1C05E53DE2 /* Pods-Stagecast iBeacon.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8WM4N873JA;
+				INFOPLIST_FILE = "Stagecast iBeacon/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "se.stagecast.stagecastibeacon.Stagecast-iBeacon";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D14E21261E85A7670051F341 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 939D34D5F9C21B1B1F9C61E7 /* Pods-Stagecast iBeacon.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8WM4N873JA;
+				INFOPLIST_FILE = "Stagecast iBeacon/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "se.stagecast.stagecastibeacon.Stagecast-iBeacon";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D14E21281E85A7670051F341 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 7PWNJ5MY4Y;
+				INFOPLIST_FILE = "Stagecast iBeaconTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "se.stagecast.stagecastibeacon.Stagecast-iBeaconTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stagecast iBeacon.app/Stagecast iBeacon";
+			};
+			name = Debug;
+		};
+		D14E21291E85A7670051F341 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 7PWNJ5MY4Y;
+				INFOPLIST_FILE = "Stagecast iBeaconTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "se.stagecast.stagecastibeacon.Stagecast-iBeaconTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stagecast iBeacon.app/Stagecast iBeacon";
+			};
+			name = Release;
+		};
+		D14E212B1E85A7670051F341 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 7PWNJ5MY4Y;
+				INFOPLIST_FILE = "Stagecast iBeaconUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "se.stagecast.stagecastibeacon.Stagecast-iBeaconUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Stagecast iBeacon";
+			};
+			name = Debug;
+		};
+		D14E212C1E85A7670051F341 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 7PWNJ5MY4Y;
+				INFOPLIST_FILE = "Stagecast iBeaconUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "se.stagecast.stagecastibeacon.Stagecast-iBeaconUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Stagecast iBeacon";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D14E20F21E85A7660051F341 /* Build configuration list for PBXProject "Stagecast iBeacon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D14E21221E85A7670051F341 /* Debug */,
+				D14E21231E85A7670051F341 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D14E21241E85A7670051F341 /* Build configuration list for PBXNativeTarget "Stagecast iBeacon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D14E21251E85A7670051F341 /* Debug */,
+				D14E21261E85A7670051F341 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D14E21271E85A7670051F341 /* Build configuration list for PBXNativeTarget "Stagecast iBeaconTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D14E21281E85A7670051F341 /* Debug */,
+				D14E21291E85A7670051F341 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D14E212A1E85A7670051F341 /* Build configuration list for PBXNativeTarget "Stagecast iBeaconUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D14E212B1E85A7670051F341 /* Debug */,
+				D14E212C1E85A7670051F341 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D14E20EF1E85A7660051F341 /* Project object */;
+}
