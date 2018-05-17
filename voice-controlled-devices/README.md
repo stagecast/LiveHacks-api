@@ -1,7 +1,7 @@
-# Instruction for starting with Alexa:
+# Instruction to start with Alexa:
 
 To access and use Amazon services such as Lambda services we have
-created four accounts, **you will be provided with the accounts during the Hack.**
+created four accounts, **you will be provided with the accounts during the LiveHack.**
 
 ## Login to AWS console
 You can use the credentials provided to login to the Amazon AWS console at
@@ -30,8 +30,9 @@ The first task for the developer, designer or thinker is to understand _what you
 
 When the user speaks to one of the Echo Dot used in Live Hacks, they have Alexa installed that recognizes the speech, determines what the user wants, and then sends a request to the particular skill that can fulfill the user's request. All speech recognition and conversion is handled by Alexa in the cloud.
 
-Every Alexa skill has an [_interaction model_](https://developer.amazon.com/docs/ask-overviews/understanding-how-users-interact-with-skills.html#what-is-an-interaction-model) defining the words and phrases users can say to make the skill do what they want. This model determines how Alexa communicates with the users. During Live Hacks you will be able to work on [examples of interaction models](https://developer.amazon.com/docs/ask-overviews/understanding-how-users-interact-with-skills.html#what-is-an-interaction-model) only focused on voice interaction. After understanding the concept of interaction model, we recommend each team member to start building a [Custom Skills on Alexa](https://developer.amazon.com/docs/custom-skills/understanding-custom-skills.html), perhaps using the Spotify API designed for Alexa.
+Every Alexa skill has an [_interaction model_](https://developer.amazon.com/docs/ask-overviews/understanding-how-users-interact-with-skills.html#what-is-an-interaction-model) defining the words and phrases users can say to make the skill do what they want. This model determines how Alexa communicates with the users. During Live Hacks you will be able to work on [examples of interaction models](https://developer.amazon.com/docs/ask-overviews/understanding-how-users-interact-with-skills.html#what-is-an-interaction-model) only focused on voice interaction. After understanding the concept of interaction model, we recommend each team member to start building a [Custom Skills on Alexa](https://developer.amazon.com/docs/custom-skills/understanding-custom-skills.html), perhaps using the music application interface you will find in the Spotify API.
 
 ## Spotify API
 
-TBD
+In the LiveHacks each team will have Spotify Premium accounts that let you play your favourite music by requesting your musical choice to Alexa. In the link below you will find a tutorial on how to start building a Web app with the API: 
+https://beta.developer.spotify.com/documentation/web-api/quick-start/
