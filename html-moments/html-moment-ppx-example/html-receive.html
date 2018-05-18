@@ -1,14 +1,8 @@
-<style>
-	body {
-		font-size:64px;
-		background-color:white;
-		color:black;
-	}
-</style> 
 <script src="/libs/pl.js"></script>
 <script type="text/javascript">
 	const eventName = 'my_unique_event';
 	const ws_remote = new WebSocket(`ws://stagecast.se/api/events/${eventName}/ws?x-user-listener=1`);
+
 	//Requesting a websocket channel for the current content.
 	PL.app_channel()
 	.then(function (ws) {
@@ -26,17 +20,19 @@
 			}
 		}
 		const handleMessage = m => {
-			let col = m.msg.col;
-			var data = {
-				R: col[0],
-				G: col[1],
-				B: col[2]
+			if (!m.msg) {
+				return;
 			}
-			ws.plsend(data);
-			console.log(`r: ${data.R}, g: ${data.G}, b: ${data.B}`);
+			send(m.msg);
 		};
-		// You can use ws.plsend() to send data to the python script
-		console.log(`r: ${data.R}, g: ${data.G}, b: ${data.B}`);
-		ws.plsend(data)
+
+		const send = m => {
+			document.body.style.backgroundColor = `rgb(${m.R},${m.G},${m.B})`;
+
+			// You can use ws.plsend() to send data to the python script
+			ws.plsend(m)
+		}
+
+		send(data);
 	})
 </script>
