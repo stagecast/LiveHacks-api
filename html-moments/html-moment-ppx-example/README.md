@@ -1,5 +1,5 @@
 # HTML moment example 
-Turn smartphone accelerometer data into MIDI output via Node.js
+Turn smartphone input data into visual output in ProtoPixel Create via Python and OFX.
 
 ## Login
 
@@ -18,23 +18,20 @@ Turn smartphone accelerometer data into MIDI output via Node.js
 4. Where it says 'YOUR HTML' copy/paste the contents from 'html-send.html'
 5. Save and Exit.
 
-## Run Node
+## Run PPX
 
-1. Do 'npm install'
-2. Open up 'html-receive.js', change the variable 'eventName' and save.
-3. run 'node html-receive.js'
+1. Open ProtoPixel Create and click 'Workspace' > 'New Content' > 'Script'
+2. Choose 'remote_interface.py'
+3. Click 'Project' > 'Open Webapp'
+4. Select 'remote_interface.py'
 
 ***
 
-## Debug MIDI
+## Debug PPX
 
-Install https://www.snoize.com/MIDIMonitor/ to monitor the MIDI data.
+The PPX server runs at port 8181, for instance: http://localhost:8181/libs/pl.js
 
 ## Documentation
 
-1. https://github.com/justinlatimer/node-midi
-2. https://github.com/websockets/ws
-
-*** 
-
-Based on the work of Possan, https://github.com/possan/stagecast-hack2018
+1. https://protopixel.net/doc/create/quick_start.html
+2. https://openframeworks.cc/documentation/

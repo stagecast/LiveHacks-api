@@ -12,7 +12,7 @@ content.FBO_SIZE = (size, size)
 # Here we specify where the remote interface (HTML) is.
 # In this case, we have the index.html file in a folder
 # called "remote_interface"
-content.web_path('remote_interface')
+content.web_path('html-receive.html')
 
 
 @content.websocket.receive
