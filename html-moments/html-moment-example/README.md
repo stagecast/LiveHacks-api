@@ -30,10 +30,13 @@ Turn smartphone accelerometer data into MIDI output via Node.js
 
 Install https://www.snoize.com/MIDIMonitor/ to monitor the MIDI data.
 
-## Documentation
+## Documentation & Links
 
 1. https://github.com/justinlatimer/node-midi
 2. https://github.com/websockets/ws
+3. https://www.tobias-erichsen.de/software/virtualmidi.html
+4. http://projectgus.github.io/hairless-midiserial/
+5. https://resolume.com/download/
 
 *** 
 

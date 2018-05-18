@@ -31,7 +31,8 @@ Turn smartphone input data into visual output in ProtoPixel Create via Python an
 
 The PPX server runs at port 8181, for instance: http://localhost:8181/libs/pl.js
 
-## Documentation
+## Documentation & Links
 
 1. https://protopixel.net/doc/create/quick_start.html
 2. https://openframeworks.cc/documentation/
+3. https://shop.protopixel.net/shop/create/
