@@ -26,10 +26,12 @@ There are a couple of iBeacons available during the hackathon. Instructions and 
 ### Hardware list
 The hardware provided is found at the hardware station. Below is a list with some of the things you will find.
 
-- 2 arduino starter kits including some motors and sensors, see Arduino project book for all details.
-- 3 Wifi shields
-- 1 Bluetooth sheild
-- Addressable LED strips
+- 2 Arduino starter kits including some motors and sensors, see Arduino project book for all details.
+- 1 Raspberry Pi and a webcam;
+- 1 Kinect (1st version).
+- 3 Wifi shields;
+- 1 Bluetooth sheild;
+- Addressable LED strips;
 
 ## Access the Stagecast platform
 If you want to access the Stagecast web platform and launch moments follow this guide:
