@@ -51,6 +51,3 @@ To launch a html-moment from Stagecast web platform your project has to be struc
 2. Open the timeline and view your moment.
 
 ***
-
-## HTML-moment-example
-In the *html-momment-example* folder you'll find an example project that you can build upon. The project takes input from the gyroscope in the phone and sends that information to a node-server through a websocket connection. The server outputs a midi signal that could be used to changes lights etc.
