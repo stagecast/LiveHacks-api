@@ -13,4 +13,4 @@ Here ---> https://github.com/stagecast/api/wiki
 
 *Good luck! :)*
 
-*/Stagecast Team*
+* /Stagecast Team*
