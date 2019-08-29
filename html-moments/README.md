@@ -23,17 +23,15 @@ const token = stagecast.getToken()
 const eventId = stagecast.getEventId()
 // Get the moment id
 const momentId = stagecast.getMomentId()
-// Get the coordinates of the client
-const coordinateString = stagecast.getCoordinates()
-const lat = coordianteString.split(" ")[0]
-const lng = coordianteString.split(" ")[1]
+// Get the moment class id
+const momentClassId = stagecast.getMomentClassId()
 // Get the moment state
 const state = stagecast.isActive()
 // Get the API endpoint host (staging.stagecast.se, stagecast.se)
 const host = stagecast.getHost()
 // Get the user id
 const userId = stagecast.getUserId()
-// Returns if the moment is active (returns the active boolean from the moment object)
+// Returns if the moment is active (returns the active boolean from the moment object (hard coded to true right now))
 const userId = stagecast.isMomentActive()
 // Returns the host name of our CDN
 const cdn = stagecast.cdnHost()
