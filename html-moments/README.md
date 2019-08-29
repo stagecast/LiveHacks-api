@@ -1,4 +1,4 @@
-# HTML moments
+# HTML Moments
 Here you'll find general information how to use a html moment (webview-moment) to try out your implementation inside the Stagecast app.
 
 **See this [video]() how to launch the HTML Moment from the Stagecast webplatform.**
