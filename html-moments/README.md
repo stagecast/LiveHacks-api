@@ -42,9 +42,9 @@ const cdn = stagecast.cdnHost()
 ## Stagecast API
 If you have the _token_ as retrieved from the above API is is possible to invoke further methods in the Stagecast API which can be found at [https://stagecast.se/api/docs](https://stagecast.se/api/docs). 
 
-In particularly useful for HTML view moments is perhaps the [Websocket API](https://stagecast.se/api/docs#section1.6) that can be used to, in real-time, send messages between clients in a moment or the various methods for persisting _moment state_ - like [Get global moment state](https://stagecast.se/api/docs#section2.5), [Get user moment state](https://stagecast.se/api/docs#section2.6), 
-[Modify user moment state](https://stagecast.se/api/docs#section2.7) and 
-[Subscribe to state changes](https://stagecast.se/api/docs#section2.8) 
+In particularly useful for HTML view moments is perhaps the [Websocket API](http://stagecast.se/api/docs#section1.6) that can be used to, in real-time, send messages between clients in a moment or the various methods for persisting _moment state_ - like [Get global moment state](http://stagecast.se/api/docs#section2.5), [Get user moment state](http://stagecast.se/api/docs#section2.6), 
+[Modify user moment state](http://stagecast.se/api/docs#section2.7) and 
+[Subscribe to state changes](http://stagecast.se/api/docs#section2.8) 
 
 
 
