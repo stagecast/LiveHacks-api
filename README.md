@@ -18,7 +18,7 @@ See documentation [here](https://github.com/stagecast/LiveHacks-api/tree/master/
 ## Launch a HTML (Dev) Moment
 You can try out your Moment by launching it inside of the Stagecast App with the HTML Moment.
 
-Webplatform user: See [video]() how to setup and launch a HTML Moment. 
+Webplatform user: See [video](https://drive.google.com/file/d/1g4n8fxAFiSRsDcfQOCK1TSrnhiDAp9IU/view) how to setup and launch a HTML Moment. 
 
 Developer: See the README in the html-moments [here](https://github.com/stagecast/LiveHacks-api/tree/master/html-moments) for details how to structure your code.
 
