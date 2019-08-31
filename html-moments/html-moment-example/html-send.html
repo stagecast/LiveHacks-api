@@ -16,8 +16,10 @@
 			window.addEventListener('load', () => {
 				ws.onopen = function() {
 					ws.send(authString);
-					let data = JSON.stringify({ msg: 'Hello!' });
-					ws.send(data);
+					window.addEventListener('click', function(){
+						let data = JSON.stringify({ msg: 'Hello!' });
+						ws.send(data);
+					})
 				};
 			});
 		</script>
