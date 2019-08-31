@@ -14,7 +14,7 @@ Example using wscat (npm install -g wscat) to connect to the channel livehacks_t
 ## Sending messages to a channel
 ### Authenticating
 
-In order to send messages to specific users or to all users listening to the same channel (like _livehacks_test_ above), you would have to be authenticated. Authentication can be done, after you have connected the websocket (and before you send the first message) in one of two ways - either by supplying email address and password or by supplying a token that has been retrieved through logging in to the backend using https://stagecast.se/api/docs#section0.3. 
+In order to send messages to specific users or to all users listening to the same channel (like _livehacks_test_ above), you would have to be authenticated. Authentication can be done, after you have connected the websocket (and before you send the first message) in one of two ways - either by supplying email address and password or by supplying a token that has been retrieved through logging in to the backend using http://stagecast.se/api/docs#section0.3. 
 
 #### Example of authenticating using email and password
 
