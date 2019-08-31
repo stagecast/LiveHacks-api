@@ -16,10 +16,11 @@
 			window.addEventListener('load', () => {
 				ws.onopen = function() {
 					ws.send(authString);
-					window.addEventListener('click', function(){
-						let data = JSON.stringify({ msg: 'Hello!' });
+					ws.send(JSON.stringify({ msg: 'user_joined' }));;
+					window.addEventListener('click', function() {
+						let data = JSON.stringify({ msg: 'Click!' });
 						ws.send(data);
-					})
+					});
 				};
 			});
 		</script>
