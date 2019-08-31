@@ -14,23 +14,12 @@
 			const authString = `{ "email" : "jonasjohansson@stagecast.se", "password" : "Ciao1234" }`;
 			const ws = new WebSocket(`wss://stagecast.se/api/events/${channelName}/ws`);
 			window.addEventListener('load', () => {
-		        ws.onopen = function() {
-		          ws.send(authString);
-		          if (window.DeviceOrientationEvent) {
-		            window.addEventListener('deviceorientation', handleOrientation);
-		          }
-		        };
-				var lx, ly, lr;
+				ws.onopen = function() {
+					ws.send(authString);
+					let data = JSON.stringify({ msg: 'Hello!' });
+					ws.send(data);
+				};
 			});
-			function handleOrientation() {
-				let r = Math.round(event.alpha);
-				let x = Math.round(event.gamma);
-				let y = Math.round(event.beta);
-
-				document.body.innerHTML = `alpha: ${r}<br>gamma: ${x}<br> beta: ${y}`;
-				let data = JSON.stringify({ rawacc: [r, x, y] });
-				ws.send(data);
-			}
 		</script>
 	</head>
 	<body></body>
