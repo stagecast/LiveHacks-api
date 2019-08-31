@@ -5,13 +5,13 @@
 		<style>
 			body {
 				font-size: 64px;
-				background-color: red;
+				background-color: black;
 				color: white;
 			}
 		</style>
 		<script type="text/javascript">
 			const channelName = 'my_unique_event';
-			const authString = ''; // required for sender, https://github.com/stagecast/LiveHacks-api/tree/master/websocket
+			const authString = `{ "email" : "jonasjohansson@stagecast.se", "password" : "Ciao1234" }`;
 			const ws = new WebSocket(`wss://stagecast.se/api/events/${channelName}/ws`);
 			window.addEventListener('load', () => {
 		        ws.onopen = function() {
