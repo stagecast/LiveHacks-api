@@ -1,0 +1,85 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+    <head>
+        <title>Web client</title>
+    
+        <style>
+
+            body {
+                background-color: #112531;
+                color: #E54D72;
+                text-align: center;
+                padding: 40px;
+                font-size: 60px;
+            }
+            .inputs {
+                height: 20px;
+                width: 400px;
+                margin: 50px;
+            }
+            .buttons {
+                height: 50px;
+                width: 300px;
+                border-radius: 20px;
+                font-size: 25px;
+                padding: 10px;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        <!-- HTML -->
+        <a>Send and recive websocket messages</a>
+        <br>
+        <input class="inputs" type="text" id="user-input" placeholder="Your message here">
+        <br>
+        <button class="buttons" onclick="sendMessage()">Send message</button>
+        <br>
+        <br>
+        <a id="auth"></a>
+        <br>
+        <br>
+        <a id="msg">Messages: </a>
+
+        <script>
+            // Javascript
+            // Reads a Blob
+            var reader = new FileReader();
+            reader.onload = function() {
+                // alert(reader.result);
+                document.getElementById("auth").append("Auth " + reader.result);
+            }
+            
+            // Create WebSocket connection.
+            const socket = new WebSocket('ws://stagecast.se/api/events/<room_name>/ws');
+
+            //auth = `{"token":"${token}"}`
+            auth = `{"email":"<username>", "password":"<password>"}`
+
+  
+            socket.onopen = function (event) {
+                socket.send(auth)
+            }
+
+            socket.onmessage = function(event) {
+                // Check if the message is an object or something else
+                if (typeof event.data == "object") {
+                    reader.readAsText(event.data);    
+                }
+                else {
+                    document.getElementById("msg").append(event.data + ", ");    
+                } 
+            }
+
+            function sendMessage () {
+                var msg = document.getElementById("user-input").value
+                socket.send(msg);
+            }
+        </script>
+
+    </body>
+
+</html>

@@ -1,0 +1,98 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+    <head>
+        
+        <title>Mobile client</title>
+    
+        <style>
+            body {
+                background-color: #112531;
+                color: #E54D72;
+                text-align: center;
+                padding: 40px;
+                font-size: 60px;
+                margin-top: 75px;
+            }
+            .inputs {
+                height: 50px;
+                width: 70vw;
+                margin: 50px;
+                font-size: 32px;
+            }
+            .buttons {
+                height: 50px;
+                width: 70vw;
+                border-radius: 20px;
+                font-size: 32px;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+        <!-- HTML code -->
+        <a id="user">User id: </a>
+        <br><br>
+        <a id="moment">Moment id: </a>
+        <br><br>
+        <a id="token">Token: </a>
+        <br><br>
+        <input class="inputs" type="text" id="user-input" placeholder="Your message here">
+        <br>
+        <button class="buttons" onclick="sendMessage()">Send message</button>
+        <br>
+        <br>
+        <a id="auth"></a>
+        <br>
+        <br>
+        <a id="msg">Messages: </a>
+        
+
+        <script>
+            // Javascript
+
+            // Get userId etc. from Stagecast object (from parent app)
+            const userId = stagecast.getUserId()
+            const momentId = stagecast.getMomentId()
+            const token = stagecast.getToken()
+            document.getElementById("user").innerHTML=`User ID: ${userId}`;
+            document.getElementById("moment").innerHTML=`Moment ID: ${momentId}`;
+            document.getElementById("token").innerHTML=`Token: ${token}`;
+
+            // Reads a Blob
+            var reader = new FileReader();
+            reader.onload = function() {
+                document.getElementById("auth").append("Auth " + reader.result);
+            }
+
+            // Create WebSocket connection.
+            const socket = new WebSocket('ws://stagecast.se/api/events/<room_name>/ws');
+
+            auth = `{"token":"${token}"}`
+
+            socket.onopen = function (event) {
+                socket.send(auth)
+            }
+
+            socket.onmessage = function(event) {
+                // Check if the message is an object or something else
+                if (typeof event.data == "object") {
+                    reader.readAsText(event.data);    
+                }
+                else {
+                    document.getElementById("msg").append(event.data + ", ");    
+                } 
+            }
+
+            function sendMessage () {
+                var msg = document.getElementById("user-input").value
+                socket.send(msg);
+            }
+
+        </script>
+
+    </body>
+
+</html>
