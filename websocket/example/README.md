@@ -2,10 +2,10 @@
 This is an example project to demonstrate how to connect and send messages using a websocket from/to the HTML Moment (mobile) from/to a website.
 
 ## Setup 
-1. Open `ws_web-client.html` and set your own <room_name>, <username> and <password>.
+1. Open `ws_web-client.html` and set your own `<room_name>`, `<username>` and `<password>`.
 
 - <room_name> this can be anything.
-- <username> and <password> these are the credentials you have used to sign up on the Stagecast platform.
+- `<username>` and `<password>` these are the credentials you have used to sign up on the Stagecast platform.
 
 2. Run `ws_web-client.html` in a browser on your computer.
 
@@ -23,4 +23,4 @@ Both are:
 1. Open a web socket connection and authenticate.
 2. Enable the user to post a message that is broadcasted in the websocket room.
 
-`ws_mobile-client.html` is using a the `stagecast` [API](https://github.com/stagecast/LiveHacks-api/tree/master/html-moments) to get token, userId and momentId.
+`ws_mobile-client.html` is using the `stagecast` [API](https://github.com/stagecast/LiveHacks-api/tree/master/html-moments) to get token, userId and momentId.
