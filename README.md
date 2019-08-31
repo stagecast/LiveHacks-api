@@ -9,8 +9,9 @@ Welcome to LiveHacks and the Stagecast community!
 - Available Hardware
 
 ## Get started using the Stagecast product.
-Visit Stagecast.io and create an account.
-Watch this [video](https://drive.google.com/open?id=1oCo_ezmw7FWeuh2rlgdItQCSagjFSGk2) that shows how to get started with the Stagecast platform.
+1. Visit Stagecast.io and create an account.
+
+2. Watch this [video](https://drive.google.com/open?id=1oCo_ezmw7FWeuh2rlgdItQCSagjFSGk2) that shows how to get started with the Stagecast platform.
 
 ## Use Stagecast websocket interface
 See documentation [here](https://github.com/stagecast/LiveHacks-api/tree/master/websocket).
