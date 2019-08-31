@@ -1,7 +1,7 @@
 const WebSocket = require('ws');
 const channelName = 'my_unique_event';
 const ws = new WebSocket(`wss://stagecast.se/api/events/${channelName}/ws`);
-const authString = ''; // required for sender, https://github.com/stagecast/LiveHacks-api/tree/master/websocket
+const authString = `{ "email" : "jonasjohansson@stagecast.se", "password" : "Ciao1234" }`;
 
 const handleMessage = m => {
 	if (!m.msg) {
