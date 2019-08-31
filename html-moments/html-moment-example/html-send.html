@@ -1,29 +1,37 @@
-<style>
-	body {
-		font-size:64px;
-		background-color:white;
-		color:black;
-	}
-</style> 
-<script type="text/javascript">
-	const eventName = 'my_unique_event';
-	window.addEventListener('load', () => {
-		const ws = new WebSocket(`ws://stagecast.se/api/events/${eventName}/ws?x-user-listener=1`);
-		var lx, ly, lr;
-		if (window.DeviceOrientationEvent) {
-			window.addEventListener('deviceorientation', event => {
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<style>
+			body {
+				font-size: 64px;
+				background-color: red;
+				color: white;
+			}
+		</style>
+		<script type="text/javascript">
+			const channelName = 'my_unique_event';
+			const authString = ''; // required for sender, https://github.com/stagecast/LiveHacks-api/tree/master/websocket
+			const ws = new WebSocket(`wss://stagecast.se/api/events/${channelName}/ws`);
+			window.addEventListener('load', () => {
+		        ws.onopen = function() {
+		          ws.send(authString);
+		          if (window.DeviceOrientationEvent) {
+		            window.addEventListener('deviceorientation', handleOrientation);
+		          }
+		        };
+				var lx, ly, lr;
+			});
+			function handleOrientation() {
 				let r = Math.round(event.alpha);
 				let x = Math.round(event.gamma);
 				let y = Math.round(event.beta);
-				if (r != lr || y!= ly || x != lx) {
-					lx = x;
-					ly = y;
-					lr = r;
-					document.body.innerHTML = `alpha: ${r}<br>gamma: ${x}<br> beta: ${y}`;
-					let data = JSON.stringify({rawacc:[r, x, y]});
-					ws.send(data);
-				}
-			}, true);
-		}
-	});
-</script>
+
+				document.body.innerHTML = `alpha: ${r}<br>gamma: ${x}<br> beta: ${y}`;
+				let data = JSON.stringify({ rawacc: [r, x, y] });
+				ws.send(data);
+			}
+		</script>
+	</head>
+	<body></body>
+</html>

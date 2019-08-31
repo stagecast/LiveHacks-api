@@ -1,32 +1,14 @@
 const WebSocket = require('ws');
-const midi = require('midi');
-
-const eventName = 'my_unique_event';
-const input = new midi.input();
-const output = new midi.output();
-
-// console.log('Inputs:');
-// for (var i = 0; i < input.getPortCount(); i++) {
-// 	console.log('Input #'+i+': ' + input.getPortName(i));
-// }
-// console.log();
-
-// console.log('Outputs:');
-// for (var i = 0; i < output.getPortCount(); i++) {
-// 	console.log('Output #'+i+': ' + output.getPortName(i));
-// }
-// console.log();
-
-output.openPort(0);
-
-const ws = new WebSocket(`ws://stagecast.se/api/events/${eventName}/ws?x-user-listener=1`);
+const channelName = 'my_unique_event';
+const ws = new WebSocket(`wss://stagecast.se/api/events/${channelName}/ws`);
+const authString = ''; // required for sender, https://github.com/stagecast/LiveHacks-api/tree/master/websocket
 
 const handleMessage = m => {
 	if (!m.msg) {
 		return;
 	}
 
-	// console.log('m',m);
+	// console.log('m', m);
 
 	const rawx = m.msg.rawacc[0];
 	const rawy = m.msg.rawacc[1];
@@ -43,24 +25,20 @@ const handleMessage = m => {
 	console.log(`_x: ${rawx}, _y: ${rawy}, _r: ${rawr}`);
 	console.log(`x: ${x}, y: ${y}, r: ${r}`);
 
-	output.sendMessage([0xB0, 41, x]);
-	output.sendMessage([0xB0, 42, y]);
-	output.sendMessage([0xB0, 43, r]);
+	// output.sendMessage([0xb0, 41, x]);
+	// output.sendMessage([0xb0, 42, y]);
+	// output.sendMessage([0xb0, 43, r]);
 };
 
 ws.on('open', () => {
-	// setInterval(() => {
-	// 	handleMessage({msg: {rawacc: [0,-90,-180]}})
-	// 	setTimeout(() => {
-	// 		handleMessage({msg: {rawacc: [180,0,0]}})
-	// 		setTimeout(() => {
-	// 			handleMessage({msg: {rawacc: [360,90,180]}})
-	// 		},500);
-	// 	},500);
-	// },1500);
+	// if (auth !== '') ws.send(`${auth}`);
 });
 
 ws.on('message', data => {
+	console.log(data.toString());
+	if (data.toString() === 'ok') {
+		return;
+	}
 	try {
 		data = JSON.parse(data);
 		handleMessage(data);
@@ -69,11 +47,10 @@ ws.on('message', data => {
 	}
 });
 
-Number.prototype.map = function (in_min, in_max, out_min, out_max) {
-	return (this - in_min) * (out_max - out_min) / (in_max - in_min) + out_min;
+Number.prototype.map = function(in_min, in_max, out_min, out_max) {
+	return ((this - in_min) * (out_max - out_min)) / (in_max - in_min) + out_min;
 };
 
 process.on('SIGINT', () => {
-	output.closePort();
 	process.exit(2);
 });
